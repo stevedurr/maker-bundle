@@ -15,6 +15,8 @@ namespace <?= $namespace ?>;
 <?php endif ?>
 class <?= $class_name."\n" ?>
 {
+    use TimestampableEntity;
+
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
